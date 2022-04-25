@@ -20,6 +20,11 @@
     <div class="item">
 
       <span class="project-title">
+        {% if project.type == 'github' %}
+                <i class="fab fa-github"></i>
+              {% elsif project.type == 'site' %}
+                <i class="fas fa-globe-americas"></i>
+              {% endif %}
         {% if project.link %}
         <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
         {% else %}
@@ -31,6 +36,11 @@
       - <span class="project-tagline">{{ project.tagline }}</span>
       {% endif %}
 
+      {% if project.langs %}
+      <div class="project-tagline">
+      </br>Language(s) Used: {{ project.langs }}</div>
+      {% endif %}
+<hr>
     </div><!--//item-->
   {% endfor %}
 

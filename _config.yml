@@ -1,20 +1,20 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: My Resume
-url: 'http://webjeda.com'
+title: Resume of Kyle Reddoch
+url: 'https://kylereddoch.me'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
-#baseurl: '/online-cv' 
+baseurl: '/online-cv' 
 
-description: A beautiful Jekyll theme for creating resume
+description: Kyle Reddoch's online resume.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: blue # blue turquoise green berry orange ceramic
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
-analytics: UA-83979019-1
+analytics: UA-171416571-1
 
 # Sass/SCSS
 sass:
@@ -32,5 +32,5 @@ compress_html: # - http://jch.penibelst.de/
 
 # Development Settings
 port: 4000
-host: 0.0.0.0
+host: 127.0.0.1
 safe: false
