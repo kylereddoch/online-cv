@@ -45,14 +45,16 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Highly motivated and results oriented professional. Software Engineer and developer with a passion for Apple’s ecosystem. Experienced in frontend development using HTML, CSS, JS, and PHP.
+      Dedicated to improving skills through hands-on learning and development work. Supports team administrative, project coordination, design, and programming needs. Adept at using various programming languages to produce clean code. Well-organized and collaborative team player with solid communication and analytical abilities.
 education:
     - degree: BSc in Computer Science
       university: Southern New Hampshire University
-      time: 2022 - 2026
+      time: 2022 - current
       details: |
         Majoring in Computer Science, Minoring in Software Engineering
           - Honor Roll (Term 22EW3)
+          - Honor Roll (Term 22EW4)
+          - President's List (Winter 2022)
 technical-experiences:
     - role: Owner & Developer
       time: June 2013 - Present
@@ -126,7 +128,7 @@ other-experiences:
 projects:
     title: Projects
     intro: >
-      Below are some of the projects and open source work that I have worked on.
+      Below are some of the projects, open source work, and class work that I have worked on.
     assignments:
       - title: Password Generator
         link: "https://github.com/kylereddoch/PasswordGenerator"
@@ -152,6 +154,17 @@ projects:
         langs: Javascript
         type: github
 
+      - title: IT140-Python
+        tagline: Collection of work I completed while in my Python class at SNHU.
+        link: https://github.com/kylereddoch/IT140-Python
+        langs: Python
+        type: github
+
+      - title: IT140-Java
+        tagline: Collection of work I completed while in my Java class at SNHU.
+        link: https://github.com/kylereddoch/IT140-Java
+        langs: Java
+        type: github
 
 #publications:
 #    title: Publications
@@ -182,6 +195,9 @@ skills:
       - name: Python
         level: 75%
 
+      - name: Java
+        level: 70%
+
       - name: PHP
         level: 80%
 
@@ -200,14 +216,17 @@ skills:
       - name: Pixelmator & Photoshop
         level: 80%
 
+      - name: MS Office
+        level: 85%
+
 competencies:
     title: Key Competencies
     details: |
-        - HTML / CSS / JS
-        - PHP / Python
-        - MySQL / SQL
-        - Microsoft Office / iWork Suite
-        - Client communication / Problem solver / Analytical & Critical Thinker / Time management
+        - Computer programming and coding
+        - Testing and debugging
+        - Problem solving and Logical thinking
+        - Team player
+        - Quick learner
 
 footer: >
     Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://kylereddoch.me" target="_blank" rel="nofollow">Kyle Reddoch</a>
