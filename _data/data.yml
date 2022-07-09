@@ -49,11 +49,12 @@ career-profile:
 education:
     - degree: BSc in Computer Science
       university: Southern New Hampshire University
-      time: 2022 - current
+      time: 2022 - 2024
       details: |
         Majoring in Computer Science, Minoring in Software Engineering
           - Honor Roll (Term 22EW3)
           - Honor Roll (Term 22EW4)
+          - Honor Roll (Term 22EW5)
           - President's List (Winter 2022)
 technical-experiences:
     - role: Owner & Developer
@@ -128,19 +129,13 @@ other-experiences:
 projects:
     title: Projects
     intro: >
-      Below are some of the projects, open source work, and class work that I have worked on.
+      Below are some of the projects, open source work, and class work that I have worked on. For more projects/work, check out my <a href="https://github.com/kylereddoch" target="_blank">GitHub</a>.
     assignments:
       - title: Password Generator
         link: "https://github.com/kylereddoch/PasswordGenerator"
         tagline: "A simple, yet powerful password generator that can be used to generate passwords for websites, apps, and other applications."
         langs: Python
         type: github
-
-      - title: KyleReddoch.me
-        tagline: My personal site/blog. Uses Jekyll and Github Pages.
-        link: https://www.kylereddoch.me
-        langs: HTML/CSS/SCSS/Javascript/Jekyll
-        type: site
 
       - title: IP Address Checker
         tagline: Simple Python script that will check your IP address.
@@ -154,17 +149,17 @@ projects:
         langs: Javascript
         type: github
 
-      - title: IT140-Python
-        tagline: Collection of work I completed while in my Python class at SNHU.
-        link: https://github.com/kylereddoch/IT140-Python
-        langs: Python
+      - title: NPX Business Card
+        tagline: Terminal business card using Node.js and NPM.
+        link: https://github.com/kylereddoch/npx_card
+        langs: javascript, nodejs, cli
         type: github
 
-      - title: IT140-Java
-        tagline: Collection of work I completed while in my Java class at SNHU.
-        link: https://github.com/kylereddoch/IT140-Java
-        langs: Java
-        type: github
+      - title: KyleReddoch.me
+        tagline: My personal site/blog. Uses Jekyll and Github Pages.
+        link: https://www.kylereddoch.me
+        langs: HTML/CSS/SCSS/Javascript/Jekyll
+        type: site
 
 #publications:
 #    title: Publications
@@ -193,13 +188,13 @@ skills:
 
     toolset:
       - name: Python
-        level: 75%
+        level: 60%
 
       - name: Java
-        level: 70%
+        level: 50%
 
       - name: PHP
-        level: 80%
+        level: 70%
 
       - name: Javascript & jQuery
         level: 80%
@@ -208,13 +203,13 @@ skills:
         level: 95%
 
       - name: mySQL
-        level: 85%
+        level: 70%
 
       - name: SQL
-        level: 80%
+        level: 60%
 
       - name: Pixelmator & Photoshop
-        level: 80%
+        level: 70%
 
       - name: MS Office
         level: 85%
