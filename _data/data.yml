@@ -26,7 +26,7 @@ sidebar:
     stack-overflow: kyle-reddoch
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://www.kylereddoch.me/assets/pdf/Resume%20of%20Kyle%20Reddoch.pdf
+    pdf: https://www.kylereddoch.me/assets/pdf/Kyle_Reddoch_Software_Engineer.pdf
 
     languages:
       - idiom: English
@@ -45,7 +45,7 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Dedicated to improving skills through hands-on learning and development work. Supports team administrative, project coordination, design, and programming needs. Adept at using various programming languages to produce clean code. Well-organized and collaborative team player with solid communication and analytical abilities.
+      Early career software engineer with experience in Python, Java, .NET, C#, JavaScript, HTML5, and CSS. Adept at using various programming languages to produce clean code, offering cutting-edge engineering solutions, and effectively guiding developer teams. Well-organized and collaborative team player with solid communication and analytical abilities. Quick learner who can apply new concepts to solve a problem. Dedicated to improving skills through hands-on learning and development work. Bringing forth expertise in managing all aspects of the software development life cycle. Skilled in problem-solving and executing software tasks from start to finish.
 education:
     - degree: BSc in Computer Science
       university: Southern New Hampshire University
@@ -56,12 +56,22 @@ education:
           - Honor Roll (Term 22EW4)
           - Honor Roll (Term 22EW5)
           - President's List (Winter 2022)
+
+        Relevant coursework taken so far: Introduction to Scripting, Foundations in Application Development
 technical-experiences:
     - role: Owner & Developer
       time: June 2013 - Present
-      company: ReddTech Projects
+      company: ReddTech Intertactive
       details: |
-        Implementation, Design and Support of various development stacks. Front-end development and back-end.
+        Implementation, Design and Support of various development stacks. Building tools that people love and enjoy using. 
+          - Develop software and websites for clients on a contract basis.
+          - Utilized crucial design software skills to assist with projects.
+          - Effectively coded software changes and alterations based on specific design specifications.
+          - Define and develop guidelines to ensure code quality.
+          - Assist other developers and engineers in resolving critical issues.
+          - Work through the identification and resolution of technical problems.
+          - Work to build and improve upon tools.
+          - Successfully assisted several companies in going from vision to production, including a paintless dent repair shop.
     - role: Communication & IT Rep
       time: October 2019 - November 2019
       company: BSL Media
@@ -188,16 +198,22 @@ skills:
 
     toolset:
       - name: Python
-        level: 60%
+        level: 30%
 
       - name: Java
-        level: 50%
+        level: 30%
 
       - name: PHP
-        level: 70%
+        level: 50%
+
+      - name: .NET
+        level: 30%
+
+      - name: C#
+        level: 20%
 
       - name: Javascript & jQuery
-        level: 80%
+        level: 50%
 
       - name: HTML5 & CSS
         level: 95%
@@ -207,9 +223,6 @@ skills:
 
       - name: SQL
         level: 60%
-
-      - name: Pixelmator & Photoshop
-        level: 70%
 
       - name: MS Office
         level: 85%
