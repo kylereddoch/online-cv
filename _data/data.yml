@@ -22,7 +22,10 @@ sidebar:
     telegram: # add your nickname without '@' sign
     gitlab:
     bitbucket:
-    twitter: '@winphankyle'
+    twitter: #'@winphankyle'
+    mastodon: 
+       instance: iosdev.space
+       username: '@kylewritescode'
     stack-overflow: kyle-reddoch
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
