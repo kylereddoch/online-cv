@@ -24,7 +24,7 @@ sidebar:
     bitbucket:
     twitter: #'@winphankyle'
     mastodon: 
-       instance: iosdev.space
+       instance: allthingstech.social
        username: '@kylewritescode'
     stack-overflow: kyle-reddoch
     codewars:
@@ -52,7 +52,7 @@ career-profile:
 education:
     - degree: BSc in Computer Science
       university: Southern New Hampshire University
-      time: 2022 - 2024
+      time: 2022 - In process of transferring
       details: |
         Majoring in Computer Science, Minoring in Software Engineering
           - Honor Roll (Term 22EW3)
@@ -100,8 +100,15 @@ technical-experiences:
       details: |
         Managed the web department and coded client's websites using HTML, CSS, & Javascript
 other-experiences:
+    - role: Residential Customer Service Representative
+      time: March 2023 - Present
+      company: Xcel Energy
+      details: |
+        Serve customers by determining requirements, answering inquiries, resolving problems, fulfilling requests and maintaining call center database. Providing high-quality, positive customer interaction in a Call Center environment.
+        - Typical calls include: establishing, transferring, and/or disconnecting service; analyzing and explaining customers' bills; negotiating payment arrangements; promoting various marketing programs; and electric calls, including electric emergencies. 
+        - I participated in on-call rotation during emergency/outage situations.
     - role: Driver
-      time: June 2019 - Present
+      time: June 2019 - March 2023
       company: Uber & Lyft
       details: |
         Pick up and meet passangers according to requests, appointments, and schedules. Pick up passengers at prearranged locations. Interacted with passengers and provided information about the local area and points of interest, and advice on restaurants.
@@ -144,6 +151,25 @@ projects:
     intro: >
       Below are some of the projects, open source work, and class work that I have worked on. For more projects/work, check out my <a href="https://github.com/kylereddoch" target="_blank">GitHub</a>.
     assignments:
+
+      - title: Scriptable Scripts
+        tagline: Collection of scripts I wrote that are used with the Scriptable app on iOS.
+        link: https://github.com/kylereddoch/scriptable
+        langs: Javascript
+        type: github
+
+      - title: KyleReddoch.me
+        tagline: My personal site/blog. Uses Jekyll and Github Pages.
+        link: https://www.kylereddoch.me
+        langs: HTML/CSS/SCSS/Javascript/Jekyll
+        type: site
+
+      - title: NPX Business Card
+        tagline: Terminal business card using Node.js and NPM.
+        link: https://github.com/kylereddoch/npx_card
+        langs: javascript, nodejs, cli
+        type: github
+
       - title: Password Generator
         link: "https://github.com/kylereddoch/PasswordGenerator"
         tagline: "A simple, yet powerful password generator that can be used to generate passwords for websites, apps, and other applications."
@@ -155,24 +181,6 @@ projects:
         link: https://github.com/kylereddoch/Python-IP-Checker
         langs: Python
         type: github
-
-      - title: Scriptable Scripts
-        tagline: Collection of scripts I wrote that are used with the Scriptable app on iOS.
-        link: https://github.com/kylereddoch/scriptable
-        langs: Javascript
-        type: github
-
-      - title: NPX Business Card
-        tagline: Terminal business card using Node.js and NPM.
-        link: https://github.com/kylereddoch/npx_card
-        langs: javascript, nodejs, cli
-        type: github
-
-      - title: KyleReddoch.me
-        tagline: My personal site/blog. Uses Jekyll and Github Pages.
-        link: https://www.kylereddoch.me
-        langs: HTML/CSS/SCSS/Javascript/Jekyll
-        type: site
 
 #publications:
 #    title: Publications
@@ -201,10 +209,10 @@ skills:
 
     toolset:
       - name: Python
-        level: 30%
+        level: 40%
 
       - name: Java
-        level: 30%
+        level: 40%
 
       - name: PHP
         level: 50%
