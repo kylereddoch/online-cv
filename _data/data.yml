@@ -26,7 +26,7 @@ sidebar:
     mastodon: 
        instance: allthingstech.social
        username: '@kylewritescode'
-    stack-overflow: kyle-reddoch
+    stack-overflow: #kyle-reddoch
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
     pdf: https://www.kylereddoch.me/assets/pdf/Kyle_Reddoch_Software_Engineer.pdf
