@@ -19,6 +19,12 @@
     </li>
     {% endif %}
 
+    {% if sidebar.timezone %}
+    <li class="timezone"><i class="fas fa-clock"></i>
+      <a href="https://worldtimeapi.org/timezone/{{ sidebar.timezone }}" target="_blank">{{ sidebar.timezone }} Timezone</a>
+    </li>
+    {% endif %}
+
     {% if sidebar.telegram %}
     <li class="telegram"><i class="fab fa-telegram"></i>
       <a href="https://t.me/{{ sidebar.telegram }}" target="_blank">{{ sidebar.telegram }}</a>
@@ -62,8 +68,9 @@
     {% endif %}
 
     {% if sidebar.mastodon %}
+    {% assign mastodon_handle = sidebar.mastodon | split: '/' %}
     <li class="mastodon"><i class="fab fa-mastodon"></i>
-      <a href="https://{{ sidebar.mastodon.instance }}/{{ sidebar.mastodon.username }}" target="_blank">{{ sidebar.mastodon.username }}</a>
+      <a href="{{ sidebar.mastodon }}" target="_blank">{{ mastodon_handle[3] }}@{{ mastodon_handle[2] }}</a>
     </li>
     {% endif %}
 
@@ -93,9 +100,10 @@
 
     {% if sidebar.pdf %}
     <li class="pdf"><i class="fas fa-file-pdf"></i>
-      <a href="{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
+      <a href="{{ site.baseurl }}/assets/pdf/{{ sidebar.pdf }}" target="_blank">ATS Resume (PDF)</a>
     </li>
     {% endif %}
 
   </ul>
 </div><!--//contact-container-->
+

@@ -8,12 +8,13 @@ sidebar:
 
     # Profile information
     name: Kyle Reddoch
-    tagline: Software Engineer // Developer
+    tagline: Cybersecurity & IT Solutions Leader
     avatar: kyle-profile-pic.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: kylereddoch@me.com
+    email: kylereddoch@proton.me
     phone: +1 806 418 1016
+    timezone: America/Chicago # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
     citizenship:
     website: kylereddoch.me #do not add http://
     linkedin: kylereddoch
@@ -23,13 +24,11 @@ sidebar:
     gitlab:
     bitbucket:
     twitter: #'@winphankyle'
-    mastodon: 
-       instance: allthingstech.social
-       username: '@kylewritescode'
+    mastodon: https://infosec.exchange/@cyberseckyle
     stack-overflow: #kyle-reddoch
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://www.kylereddoch.me/assets/pdf/Kyle_Reddoch_Software_Engineer.pdf
+    pdf: KyleReddoch_ATS.pdf
 
     languages:
       - idiom: English
@@ -48,33 +47,28 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Early career software engineer with experience in Python, Java, .NET, C#, JavaScript, HTML5, and CSS. Adept at using various programming languages to produce clean code, offering cutting-edge engineering solutions, and effectively guiding developer teams. Well-organized and collaborative team player with solid communication and analytical abilities. Quick learner who can apply new concepts to solve a problem. Dedicated to improving skills through hands-on learning and development work. Bringing forth expertise in managing all aspects of the software development life cycle. Skilled in problem-solving and executing software tasks from start to finish.
+      I specialize in delivering innovative IT and cybersecurity solutions that keep businesses secure, efficient, and ahead of the curve. With 14+ years of experience in web development, software engineering, system administration, and IT support, I've built a career around solving complex IT challenges and aligning technology with business goals. I thrive in fast-paced environments, working collaboratively with clients, stakeholders, and teams to implement solutions that drive productivity and security. Whether it's streamlining IT operations, strengthening security postures, or leveraging automation, I take pride in delivering results that matter.
 education:
-    - degree: BSc in Computer Science
-      university: Southern New Hampshire University
-      time: 2022 - In process of transferring
+    - degree: BSc in Information Tecnology
+      university: University of Phoenix
+      time: 2023 - 2026
       details: |
-        Majoring in Computer Science, Minoring in Software Engineering
-          - Honor Roll (Term 22EW3)
-          - Honor Roll (Term 22EW4)
-          - Honor Roll (Term 22EW5)
-          - President's List (Winter 2022)
+        (With an Advanced Certification in Cybersecurity). I constantly receive recognition for my academic achievements, including:
+          - President's List (1st half of 2024)
+          - President's List (2nd half of 2024)
+          - President's List (1st half of 2025)
 
-        Relevant coursework taken so far: Introduction to Scripting, Foundations in Application Development
 technical-experiences:
-    - role: Owner & Developer
-      time: June 2013 - Present
-      company: ReddTech Intertactive
+    - role: Head of MSP Services
+      time: July 2023 - Present
+      company: Panhandle Computer Services
       details: |
-        Implementation, Design and Support of various development stacks. Building tools that people love and enjoy using. 
-          - Develop software and websites for clients on a contract basis.
-          - Utilized crucial design software skills to assist with projects.
-          - Effectively coded software changes and alterations based on specific design specifications.
-          - Define and develop guidelines to ensure code quality.
-          - Assist other developers and engineers in resolving critical issues.
-          - Work through the identification and resolution of technical problems.
-          - Work to build and improve upon tools.
-          - Successfully assisted several companies in going from vision to production, including a paintless dent repair shop.
+        - Manage 250+ endpoints across 10 clients, ensuring high performance, security, and stability.
+        - Implement cybersecurity initiatives including firewall and endpoint protection, significantly reducing security vulnerabilities.
+        - Monitor IT and cybersecurity incidents, reducing downtime and enhancing system resilience through regular audits and assessments.
+        - Develop managed services strategies that optimize IT operations and strengthen client relationships, increasing retention rates.
+        - Automate routine tasks like patching and monitoring, improving operational efficiency and decreasing manual workloads. Lead crisis response efforts for IT and cybersecurity incidents, achieving high levels of client satisfaction within budget constraints.
+
     - role: Communication & IT Rep
       time: October 2019 - November 2019
       company: BSL Media
@@ -89,19 +83,9 @@ technical-experiences:
           - Developed new public website for bank suing HTML5, CSS3, & Javascript.
           - Maintained and administered the bank's intranet using SharePoint.
           - Right before I left, was working with software developers in moving online banking and mobile apps in-house.
-    - role: Owner
-      time: January 2009 - September 2010
-      company: The Everyday Web Expert
-      details: |
-        The Everyday Web Expert was a full service web design company focused on the small to mid-size business community. The mission was to provide professional, high quality communication design services. Endeavored not only to understand the clients business, but also to understand their competitors and customers to determine the most appropriate and efficient solution to make their company more visible and marketable to existing and potential customers.
-    - role: Webmaster
-      time: January 2006 - June 2009
-      company: Spellmann & Associates
-      details: |
-        Managed the web department and coded client's websites using HTML, CSS, & Javascript
 other-experiences:
     - role: Residential Customer Service Representative
-      time: March 2023 - Present
+      time: March 2023 - June 2023
       company: Xcel Energy
       details: |
         Serve customers by determining requirements, answering inquiries, resolving problems, fulfilling requests and maintaining call center database. Providing high-quality, positive customer interaction in a Call Center environment.
@@ -158,7 +142,7 @@ projects:
         langs: Javascript
         type: github
 
-      - title: KyleReddoch.me
+      - title: Kyle's Tech Korner
         tagline: My personal site/blog. Uses Jekyll and Github Pages.
         link: https://www.kylereddoch.me
         langs: HTML/CSS/SCSS/Javascript/Jekyll
@@ -226,26 +210,23 @@ skills:
       - name: Javascript & jQuery
         level: 50%
 
-      - name: HTML5 & CSS
-        level: 95%
-
-      - name: mySQL
-        level: 70%
+      - name: Bash
+        level: 65%
 
       - name: SQL
-        level: 60%
+        level: 50%
 
-      - name: MS Office
-        level: 85%
+      - name: Git
+        level: 50%
 
-competencies:
-    title: Key Competencies
+abilities:
+    title: Key Abilities
     details: |
-        - Computer programming and coding
-        - Testing and debugging
-        - Problem solving and Logical thinking
-        - Team player
-        - Quick learner
+        - IT Management & Support: IT support, IT helpdesk, device management, documentation management, Google Workspace administration, Windows, macOS, networking principles
+        - Cybersecurity & Risk Management: cybersecurity, security tools, data security, problem-solving, security vulnerabilities
+        - Customer Service: customer service, team collaboration, entrepreneurial mindset, flexible working hours
+        - Process Improvement: automation, incident response, crisis management
+
 
 footer: >
     Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://kylereddoch.me" target="_blank" rel="nofollow">Kyle Reddoch</a>

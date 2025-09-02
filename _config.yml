@@ -2,19 +2,19 @@
 
 # Site Settings
 title: Online CV of Kyle Reddoch
-url: 'https://kylereddoch.me'
+url: 'https://cv.kylereddoch.me'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
-baseurl: '/online-cv' 
+#baseurl: '' 
 
-description: Kyle Reddoch's online resume.
+description: Online CV of Kyle Reddoch.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: purple # blue turquoise green berry orange ceramic purple
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
-analytics: UA-171416571-1
+#analytics: UA-171416571-1
 
 # Sass/SCSS
 sass:
