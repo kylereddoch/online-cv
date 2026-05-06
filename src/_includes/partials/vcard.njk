@@ -1,0 +1,59 @@
+{% from "macros/icon.njk" import icon %}
+<div class="vcard h-card">
+  {% if resume.person.avatar %}
+    <img
+      class="vcard__avatar u-photo"
+      src="/assets/images/{{ resume.person.avatar }}"
+      width="200"
+      height="200"
+      alt="Portrait of {{ resume.person.name }}"
+    >
+  {% endif %}
+
+  <div class="vcard__content">
+    <div class="vcard__title">
+      <h1 class="p-name">{{ resume.person.name }}</h1>
+    </div>
+
+    <p class="vcard__subtitle lead">
+      <span class="p-job-title">{{ resume.person.title }}</span>
+      {% if resume.person.location %}
+        <span aria-hidden="true">&middot;</span>
+        <span class="p-locality">{{ resume.person.location }}</span>
+      {% endif %}
+    </p>
+
+    <div class="vcard__contact p-contact">
+      {% if resume.person.email %}
+        <a class="vcard__link u-email" href="mailto:{{ resume.person.email }}">
+          {{ icon("mail") }}
+          <span class="vcard__link-text">{{ resume.person.email }}</span>
+        </a>
+      {% endif %}
+      {% if resume.person.telephone %}
+        <a class="vcard__link p-tel" href="tel:{{ resume.person.telephoneHref }}">
+          {{ icon("phone") }}
+          <span class="vcard__link-text">{{ resume.person.telephone }}</span>
+        </a>
+      {% endif %}
+      {% if resume.person.website %}
+        <a class="vcard__link u-url" href="{{ resume.person.website }}">
+          {{ icon("globe") }}
+          <span class="vcard__link-text">{{ resume.person.websiteDisplay }}</span>
+        </a>
+      {% endif %}
+
+      {% if resume.person.social.length %}
+        <div class="vcard__social">
+          {% for social in resume.person.social %}
+            <a class="vcard__link" href="{{ social.url }}" rel="me">
+              {{ icon(social.icon) }}
+              <span class="vcard__link-text p-nickname">{{ social.handle }}</span>
+              <span class="sr-only"> on {{ social.label }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

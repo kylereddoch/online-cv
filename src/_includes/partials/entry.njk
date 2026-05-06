@@ -1,0 +1,37 @@
+<article class="entry">
+  <div class="entry__header">
+    {% if entry.period.start or entry.period.end %}
+      <p class="entry__time">
+        {% if entry.period.start %}
+          {% if entry.period.start.iso %}
+            <time class="dt-start" datetime="{{ entry.period.start.iso }}">{{ entry.period.start.label }}</time>
+          {% else %}
+            <span>{{ entry.period.start.label }}</span>
+          {% endif %}
+        {% endif %}
+        {% if entry.period.end %}
+          <span>&ndash;</span>
+          {% if entry.period.end.iso %}
+            <time class="dt-end" datetime="{{ entry.period.end.iso }}">{{ entry.period.end.label }}</time>
+          {% else %}
+            <span>{{ entry.period.end.label }}</span>
+          {% endif %}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    <h3 class="entry__title p-name">{{ entry.title }}</h3>
+
+    {% if entry.organization %}
+      <p class="entry__organization p-org h-card">
+        <span class="p-name">{{ entry.organization }}</span>
+      </p>
+    {% endif %}
+  </div>
+
+  {% if entry.summary %}
+    <div class="entry__content p-summary">
+      {{ entry.summary | markdown | safe }}
+    </div>
+  {% endif %}
+</article>

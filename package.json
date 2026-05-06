@@ -1,0 +1,17 @@
+{
+  "name": "online-cv",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Kyle Reddoch's online CV built with Eleventy.",
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('_site', { recursive: true, force: true })\"",
+    "start": "npm run clean && eleventy --serve",
+    "dev": "npm run clean && eleventy --serve",
+    "build": "npm run clean && eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0"
+  }
+}

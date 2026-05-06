@@ -1,0 +1,176 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+{% from "macros/icon.njk" import icon %}
+<main class="main" id="main-content">
+  <div class="container">
+    <section class="section" id="section-about">
+      <h2 class="section__title">{{ strings.titles.about }}</h2>
+      <div class="lead p-summary">
+        {{ resume.summary | markdown | safe }}
+      </div>
+    </section>
+
+    <section class="section" id="section-experience">
+      <h2 class="section__title">{{ strings.titles.experience }}</h2>
+      <ol class="entrylist">
+        {% for item in resume.experience %}
+          {% set entry = item %}
+          <li class="entrylist__item h-event p-experience">
+            {% include "partials/entry.njk" %}
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="section" id="section-education">
+      <h2 class="section__title">{{ strings.titles.education }}</h2>
+      <ol class="entrylist">
+        {% for item in resume.education %}
+          {% set entry = item %}
+          <li class="entrylist__item h-event p-education">
+            {% include "partials/entry.njk" %}
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="section" id="section-skills">
+        <h2 class="section__title">{{ strings.titles.skills }}</h2>
+
+        <div class="skills-layout">
+          <div class="skills">
+            {% for group in resume.skillAreas %}
+              <article class="skill-group">
+                <h3 class="skill-group__title">
+                  {{ icon(group.icon) }}
+                  <span>{{ group.title }}</span>
+                </h3>
+
+                {% if group.items.length %}
+                  <ul class="taglist">
+                    {% for item in group.items %}
+                      <li class="tag p-skill">{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% elif group.body %}
+                  <p>{{ group.body }}</p>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+
+          {% if resume.toolset.length %}
+            <aside class="skills__tools">
+              <h3 class="section__subheading">Tools & Technologies</h3>
+              <ul class="taglist taglist--dense">
+                {% for skill in resume.toolset %}
+                  <li class="tag tag--tool p-skill">
+                    {{ icon(skill.icon, "tag__icon") }}
+                    <span>{{ skill.name }}</span>
+                    {% if skill.level %}
+                      <span class="tag__meta">{{ skill.level }}</span>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </aside>
+          {% endif %}
+        </div>
+    </section>
+
+    {% if resume.projects.length %}
+      <section class="section" id="section-projects">
+        <h2 class="section__title">{{ strings.titles.projects }}</h2>
+        <div class="section__lead markdown">
+          {{ resume.projectsIntro | markdown | safe }}
+        </div>
+        <div class="project-list">
+          {% for project in resume.projects %}
+            <article class="project-card">
+              <div class="project-card__header">
+                <div>
+                  <p class="project-card__type">{{ project.typeLabel }}</p>
+                  <h3 class="project-card__title">
+                    {% if project.url %}
+                      <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                  </h3>
+                </div>
+                {% if project.url %}
+                  <a class="project-card__action" href="{{ project.url }}">{{ strings.labels.projectLink }}</a>
+                {% endif %}
+              </div>
+
+              {% if project.summary %}
+                <p class="project-card__summary">{{ project.summary }}</p>
+              {% endif %}
+
+              {% if project.tags.length %}
+                <ul class="taglist taglist--compact">
+                  {% for tag in project.tags %}
+                    <li class="tag">{{ tag }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if project.url %}
+                <p class="project-card__url utl-print-only">{{ project.url }}</p>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if resume.certificationEntries.length %}
+      <section class="section" id="section-certifications">
+        <h2 class="section__title">{{ strings.titles.certifications }}</h2>
+        <ol class="entrylist">
+          {% for item in resume.certificationEntries %}
+            {% set entry = item %}
+            <li class="entrylist__item">
+              {% include "partials/entry.njk" %}
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endif %}
+
+    {% if repositories.length %}
+      <section class="section" id="section-open-source">
+        <h2 class="section__title">{{ strings.titles.openSource }}</h2>
+        {% include "partials/repositories.njk" %}
+      </section>
+    {% endif %}
+
+    <div class="grid grid--split grid--bottom">
+      <section class="section section--half" id="section-languages">
+        <h2 class="section__title">{{ strings.titles.languages }}</h2>
+        {% if resume.languages.length %}
+          <ul class="bulletlist">
+            {% for language in resume.languages %}
+              <li class="p-skill">{{ language.name }} <span class="muted">({{ language.level }})</span></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">No language details added yet.</p>
+        {% endif %}
+      </section>
+
+      {% if resume.interests.length %}
+        <section class="section section--half" id="section-interests">
+          <h2 class="section__title">{{ strings.titles.interests }}</h2>
+          <ul class="bulletlist">
+            {% for interest in resume.interests %}
+              <li>{{ interest }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+    </div>
+  </div>
+</main>

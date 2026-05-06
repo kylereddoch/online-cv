@@ -1,0 +1,46 @@
+{%- set absolutePageUrl -%}{{ site.url }}{{ page.url }}{%- endset -%}
+{%- set pageTitle -%}{{ site.shortTitle }}{%- endset -%}
+{%- set pageDescription -%}{{ site.description }}{%- endset -%}
+{%- set avatarUrl -%}{% if resume.person.avatar %}{{ site.url }}/assets/images/{{ resume.person.avatar }}{% endif %}{%- endset -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="{{ absolutePageUrl }}">
+<meta name="theme-color" content="{{ site.themeColorDark }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:type" content="profile">
+{% if avatarUrl %}
+  <meta property="og:image" content="{{ avatarUrl }}">
+{% endif %}
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.ico?v=cv-resume" sizes="any">
+<link rel="shortcut icon" href="/favicon.ico?v=cv-resume">
+<link rel="manifest" href="/site.webmanifest?v=cv-resume">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "{{ absolutePageUrl }}",
+    "name": "{{ resume.person.name | safe }}",
+    "dateModified": "{{ build.iso }}",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "{{ resume.person.name | safe }}",
+      "jobTitle": "{{ resume.person.title | safe }}",
+      {% if resume.person.email %}"email": "{{ resume.person.email }}",{% endif %}
+      {% if resume.person.website %}"url": "{{ resume.person.website }}",{% endif %}
+      {% if avatarUrl %}"image": "{{ avatarUrl }}",{% endif %}
+      "sameAs": [
+        {% for social in resume.person.social %}
+          "{{ social.url }}"{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  }
+</script>

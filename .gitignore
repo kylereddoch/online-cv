@@ -1,5 +1,9 @@
+node_modules/
 _site/
-.sass-cache/
-.jekyll-metadata
-.jekyll-cache
+.cache/
+.codex*
 .DS_Store
+artifacts/
+server.log
+server.err.log
+lighthouse-report.json

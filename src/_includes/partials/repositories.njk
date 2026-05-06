@@ -1,0 +1,20 @@
+{% from "macros/icon.njk" import icon %}
+{% if repositories.length %}
+  <ol class="repolist">
+    {% for repo in repositories %}
+      <li class="repolist__item">
+        <h3 class="repolist__title">
+          <a href="{{ repo.html_url }}">{{ repo.title }}</a>
+        </h3>
+        <p class="repolist__url utl-print-only">{{ repo.html_url }}</p>
+        {% if repo.description %}
+          <p class="repolist__desc">{{ repo.description }}</p>
+        {% endif %}
+        <div class="repolist__stats">
+          <p>{{ icon("star") }}<span>{{ repo.stargazers_count }}</span><span class="sr-only"> stars</span></p>
+          <p>{{ icon("fork") }}<span>{{ repo.forks_count }}</span><span class="sr-only"> forks</span></p>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}

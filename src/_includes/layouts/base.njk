@@ -1,0 +1,71 @@
+{% from "macros/icon.njk" import icon %}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ site.lang }}" data-theme="dark">
+<head>
+  {% include "meta.njk" %}
+  <link rel="preload" href="/assets/fonts/butler-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{{ strings.labels.skip }}</a>
+
+  <div class="layout h-resume" role="document">
+    <header class="header">
+      <div class="container">
+        {% include "partials/vcard.njk" %}
+      </div>
+    </header>
+
+    {{ content | safe }}
+
+    <aside class="sidebar" aria-label="Quick actions">
+      <div class="container">
+        <div class="actions">
+          {% if resume.person.email %}
+            <a class="actions__btn" aria-label="{{ strings.labels.email }}" href="mailto:{{ resume.person.email }}">
+              {{ icon("mail") }}
+            </a>
+          {% endif %}
+          {% if resume.person.telephoneHref %}
+            <a class="actions__btn" aria-label="{{ strings.labels.telephone }}" href="tel:{{ resume.person.telephoneHref }}">
+              {{ icon("phone") }}
+            </a>
+          {% endif %}
+          <button class="actions__btn js-theme-toggle" type="button" aria-label="{{ strings.labels.theme }}" aria-pressed="false">
+            <span class="actions__icon actions__icon--moon">{{ icon("moon") }}</span>
+            <span class="actions__icon actions__icon--sun">{{ icon("sun") }}</span>
+          </button>
+          {% if resume.person.pdf %}
+            <a
+              class="actions__btn utl-screen-only"
+              aria-label="{{ strings.labels.print }}"
+              href="/assets/pdf/{{ resume.person.pdf }}"
+              target="_blank"
+              rel="noopener"
+            >
+              {{ icon("print") }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>&copy; {{ build.year }} {{ resume.person.name }}</p>
+        <p>{{ strings.labels.lastUpdated }}: <time datetime="{{ build.iso }}">{{ build.displayDate }}</time></p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="/assets/scripts/main.js"></script>
+  <script>
+    if (location.hostname === "{{ site.analyticsHost }}" && "{{ site.tinylyticsScript }}") {
+      const script = document.createElement("script");
+      script.src = "{{ site.tinylyticsScript }}";
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+  </script>
+</body>
+</html>
